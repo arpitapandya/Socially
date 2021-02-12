@@ -1,5 +1,17 @@
 const express  = require('express');
-const { userById, allUsers, getUser, updateUser, deleteUser, userPhoto, addFollowing, addFollower, removeFollowing, removeFollower, findPeople } = require("../controllers/user");
+const { 
+    userById, 
+    allUsers, 
+    getUser, 
+    updateUser, 
+    deleteUser, 
+    userPhoto, 
+    addFollowing, 
+    addFollower, 
+    removeFollowing, 
+    removeFollower, 
+    findPeople } = require("../controllers/user");
+    
 const { requireSignin } = require("../controllers/auth");
 
 const router = express.Router();
