@@ -11,15 +11,15 @@ class Posts extends Component {
         };
     }
     
-    // componentDidMount() {
-    //     list().then(data => {
-    //         console.log(data.error);
-    //         if(data.error) {
-    //         } else {
-    //             this.setState({posts: data});
-    //         }
-    //     });
-    // }
+    componentDidMount() {
+        list().then(data => {
+            console.log(data.error);
+            if(data.error) {
+            } else {
+                this.setState({posts: data});
+            }
+        });
+    }
 
     renderPosts = posts => {
     return (

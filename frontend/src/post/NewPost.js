@@ -66,7 +66,7 @@ class NewPost extends Component {
         newPostForm = (title, body) => (    
             <form>
                 <div className = "form-group">
-                    <label className="text-muted">Profile Photo</label>
+                    <label className="text-muted">Post Photo</label>
                     <input 
                         onChange={this.handleChange("photo")} 
                         type="file"
@@ -92,7 +92,7 @@ class NewPost extends Component {
                         value={body}
                     />
                 </div>
-                <button onClick={this.clickSubmit} className="btn btn-raised btn-primary">Create Post</button>
+                <button onClick={this.clickSubmit} className="btn btn-raised btn-primary mx-2">Create Post</button>
             </form>
         );
     

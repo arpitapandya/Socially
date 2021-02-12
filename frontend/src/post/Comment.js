@@ -46,9 +46,10 @@ class Comment extends Component {
                     // dispatch fresh list of comments to parent (SinglePost)
                     this.props.updateComments(data.comments);
                 }
-            });
-        }
-    };
+            }
+        );
+    }
+};
 
     
     deleteComment = (comment) => {

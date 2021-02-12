@@ -76,7 +76,7 @@ export const follow = (userId, token, followId) => {
         body: JSON.stringify({userId, followId})
     })
         .then(response => {
-        return response.json();
+            return response.json();
     })
         .catch(err => console.log(err));
 };
@@ -92,13 +92,13 @@ export const unfollow = (userId, token, unfollowId) => {
         body: JSON.stringify({userId, unfollowId})
     })
         .then(response => {
-        return response.json();
+            return response.json();
     })
         .catch(err => console.log(err));
 };
 
 export const findPeople = (userId, token) => {
-    return fetch(`${process.env.REACT_APP_URL}/user/findpeople/${userId}`, {
+    return fetch(`${process.env.REACT_APP_API_URL}/user/findpeople/${userId}`, {
         method:"GET",
         headers: {
             Accept: "application/json",
@@ -108,6 +108,6 @@ export const findPeople = (userId, token) => {
     })
         .then(response => {
             return response.json();
-        })
+    })
         .catch(err => console.log(err));
 };

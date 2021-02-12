@@ -12,7 +12,7 @@ import NewPost from "./post/NewPost";
 import EditPost from "./post/EditPost";
 import SinglePost from "./post/SinglePost";
 import PrivateRoute from "./auth/PrivateRoute";
-// SinglePost
+
 
 
 const MainRouter = () => (

@@ -1,5 +1,5 @@
 export const create = (userId, token, post) => {
-    return fetch(`${process.env.REACT_APP_APi_URL}/post/new/${userId}`, {
+    return fetch(`${process.env.REACT_APP_API_URL}/post/new/${userId}`, {
         method:"POST",
         headers: {
             Accept: "application/json",

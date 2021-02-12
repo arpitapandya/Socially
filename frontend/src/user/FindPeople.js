@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { findPeople, follow } from "./apiUser";
-import DefaultProfile from '../images/avatar.jpg';
+import DefaultProfile from "../images/avatar.jpg";
 import { Link } from "react-router-dom";
 import { isAuthenticated } from "../auth";
 
@@ -20,8 +20,8 @@ class FindPeople extends Component {
 
         findPeople(userId, token).then(data => {
             if (data.error) {
-                // console.log(data.error);
-            // } else {
+                console.log(data.error);
+            } else {
                 this.setState({ users: data });
             }
         });
@@ -62,7 +62,7 @@ class FindPeople extends Component {
                     <p className="card-text">{user.email}</p>
                     <Link to={`/user/${user._id}`} className="btn btn-raised btn-primary btn-sm">View Profile</Link>
 
-                    <button onClick={() => this.clickFollow(user, i)} className="btn btn-raised btn-info float-right btn-sm">Follow</button>
+                    <button onClick={() => this.clickFollow(user, i)} className="btn btn-raised btn-info float-right btn-sm mx-2">Follow</button>
                 </div>
                 </div>
             ))}

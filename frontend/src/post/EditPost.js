@@ -114,7 +114,7 @@ class EditPost extends Component {
                         value={body}
                     />
                 </div>
-                <button onClick={this.clickSubmit} className="btn btn-raised btn-primary">Update Post</button>
+                <button onClick={this.clickSubmit} className="btn btn-raised btn-primary mx-2">Update Post</button>
             </form>
         );
 
