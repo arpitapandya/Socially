@@ -10,7 +10,7 @@ const {
     photo, 
     singlePost, 
     like, 
-    unlike, 
+    unlike,
     comment, 
     uncomment } = require("../controllers/post");
 const { requireSignin } = require("../controllers/auth");
