@@ -127,16 +127,16 @@ class SinglePost extends Component {
                     on {new Date(post.created).toDateString()}
                 </p>
                 <div className="d-inline-block">
-                    <Link to={`/`} className="btn btn-raised btn-primary btn-sm mr-5">
+                    <Link to={`/`} className="btn btn-raised btn-primary btn-sm mr-5 mx-2">
                         Back to posts
                     </Link>
 
                     {isAuthenticated().user && isAuthenticated().user._id === post.postedBy._id && (
                         <>
-                            <Link to={`/post/edit/${post._id}`} className="btn btn-raised btn-warning btn-sm mr-5">
+                            <Link to={`/post/edit/${post._id}`} className="btn btn-raised btn-warning btn-sm mr-5 mx-2">
                                 Update Post
                             </Link>
-                            <button onClick={this.deleteConfirmed} className="btn btn-raised btn-danger">
+                            <button onClick={this.deleteConfirmed} className="btn btn-raised btn-danger btn-sm mr-5">
                                 Delete Post
                             </button>
                         </>

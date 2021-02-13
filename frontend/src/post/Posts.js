@@ -34,13 +34,19 @@ class Posts extends Component {
                     <img src={`${process.env.REACT_APP_API_URL}/post/photo/${post._id}`} alt={post.title}
                         onError={i => i.target.src = `${DefaultPost}`}
                         className="img-thumbnail mb-3"
-                        style={{ height: "200px", width: "100%" }}
+                        style={{    
+                                border: 'black',
+                                opacity: '0.8',
+                                margin: 'auto',
+                                height: '15vw',
+                                width: '100%',
+                                objectFit: 'cover' }}
                     />
                     <h5 className="card-title">{post.title}</h5>
                     <p className="card-text">{post.body.substring(0, 100)}</p>
                     <br />
                     <p className="font-italic mark">
-                        Posted by{""} 
+                        Posted by{" "} 
                         <Link to={`${posterId}`}>{posterName}{" "}</Link>
                         on {new Date(post.created).toDateString()}
                     </p>

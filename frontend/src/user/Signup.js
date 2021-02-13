@@ -71,6 +71,7 @@ class Signup extends Component {
                 value={password} 
             />
         </div>
+        <br />
         <button onClick={this.clickSubmit} className="btn btn-raised btn-primary">Submit</button>
     </form>
     );

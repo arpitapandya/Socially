@@ -92,6 +92,7 @@ class NewPost extends Component {
                         value={body}
                     />
                 </div>
+                <br />
                 <button onClick={this.clickSubmit} className="btn btn-raised btn-primary mx-2 ">Create Post</button>
             </form>
         );

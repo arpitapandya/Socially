@@ -102,7 +102,7 @@ class Comment extends Component {
                     {error}
             </div>
                 <div className="col-md-12">
-                        <h3 className="text-primary">{comments.length}Comments</h3>
+                        <h3 className="text-primary">{comments.length} Comments</h3>
                         <hr />
                         {comments.map((comment, i) => (
                             <div key={i}>
