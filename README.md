@@ -21,4 +21,4 @@ Database managed with **MongoDB**
 - To install dependencies, run npm install or yarn
 - To run the application for development, run npm run development or yarn development
 - Open [(localhost:8080)] in the browser.
-- CLIENT_URL= [(http://localhost:3000)]
+- CLIENT_URL= [(localhost:3000)].
