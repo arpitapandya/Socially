@@ -8,6 +8,7 @@
     "build": "cd frontend && npm run build",
     "install-client": "cd frontend && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
+    "start": "node server.js",
     "client": "cd frontend && npm start"
   },
   "keywords": [
