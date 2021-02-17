@@ -20,10 +20,6 @@ mongoose.connection.on("error", err => {
     console.log(`DB connection error: ${err.message}`);
 });
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'));
-}
-
 // bring in routes
 const postRoutes = require("./routes/post");
 const authRoutes = require("./routes/auth");
