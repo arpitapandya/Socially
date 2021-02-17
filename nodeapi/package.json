@@ -4,7 +4,11 @@
   "description": "Node Js API",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "build": "cd frontend && npm run build",
+    "install-client": "cd frontend && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "client": "cd frontend && npm start"
   },
   "keywords": [
     "node",
