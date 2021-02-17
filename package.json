@@ -1,7 +1,7 @@
 {
   "name": "node_react",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple social media application with users, posts, likes and comments - developed using React, Redux, Node, Express and MongoDB.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
