@@ -5,11 +5,11 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js",
-    "build": "cd frontend && npm run build",
-    "install-client": "cd frontend && npm install",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
     "start": "node app.js",
-    "client": "cd frontend && npm start"
+    "client": "cd client && npm start"
   },
   "keywords": [
     "node",
