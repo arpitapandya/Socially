@@ -1,4 +1,5 @@
 import React from "react";
+import "./Home.css";
 import Posts from "../post/Posts";
 
 const Home = () => (
