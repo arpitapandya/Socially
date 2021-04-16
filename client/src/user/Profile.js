@@ -91,12 +91,11 @@ class Profile extends Component {
                 <div className="row">
                     <div className="col-md-4"> 
                         <img 
-                           style={{ height: "200px", width: "auto" 
-                                }}
-                           className="img-thumbnail"
-                           src={photoUrl}
-                           onError={i => (i.target.src = `${DefaultProfile}`)}
-                           alt={user.name} 
+                        style={{ height: "200px", width: "auto" }}
+                        className="img-thumbnail"
+                        src={photoUrl}
+                        onError={i => (i.target.src = `${DefaultProfile}`)}
+                        alt={user.name} 
                         />
                     </div> 
         

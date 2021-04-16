@@ -40,8 +40,10 @@ class Signin extends Component {
         });
     };
 
-    signinForm = (email, password) => (    
-    <form>
+    signinForm = (email, password) => (
+        <div className="card">
+        <div className="card-body">
+        <form>
         <div className = "form-group">
             <label className="text-muted">Email</label>
             <input 
@@ -63,6 +65,8 @@ class Signin extends Component {
         <br />
         <button onClick={this.clickSubmit} className="btn btn-raised btn-primary">Submit</button>
     </form>
+    </div>
+    </div>
     );
 
     render() {
@@ -73,7 +77,7 @@ class Signin extends Component {
         }
 
         return (
-            <div className="container">
+            <div className="container col-md-6 col-lg-4 offset-md-3 offset-lg-4">
                 <h2 className="mt-5 mb-5">Sign In</h2>
 
                 <div className="alert alert-danger" 
@@ -85,9 +89,9 @@ class Signin extends Component {
                     <div className="jumbotron text-center">
                         <h2>Loading...</h2>
                     </div>
-                 ) : (
-                     ""
-                 )}
+                ) : (
+                    ""
+                )}
                     {this.signinForm(email, password)}
             </div>
         );

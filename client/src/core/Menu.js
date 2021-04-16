@@ -28,7 +28,7 @@ const Menu = ({ history }) => (
         </li>
         
     {!isAuthenticated() && (
-     <>
+    <>
         <li className="nav-item">
             <Link className="nav-link" style={isActive(history, "/signin")} to="/signin">Sign In</Link>
             </li>
@@ -38,7 +38,6 @@ const Menu = ({ history }) => (
     </>
     )}
 
-   
 
         {isAuthenticated() && (   
             <>

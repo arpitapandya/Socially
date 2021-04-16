@@ -43,6 +43,8 @@ class Signup extends Component {
     };
 
     signupForm = (name, email, password) => (    
+    <div className="card">
+    <div className="card-body">
     <form>
         <div className = "form-group">
             <label className="text-muted">Name</label>
@@ -74,13 +76,15 @@ class Signup extends Component {
         <br />
         <button onClick={this.clickSubmit} className="btn btn-raised btn-primary">Submit</button>
     </form>
+    </div>
+    </div>
     );
 
     render() {
         const { name, email, password, error, open } = this.state;
         return (
-            <div className="container">
-                <h2 className="mt-5 mb-5">Signup</h2>
+            <div className="container col-md-6 col-lg-4 offset-md-3 offset-lg-4">
+                <h2 className="mt-5 mb-5">Sign Up</h2>
 
                 <div className="alert alert-danger" 
                 style={{ display: error ? "" : "none" }}>
