@@ -20,5 +20,5 @@ Database managed with **MongoDB**
 - Open command line in the cloned folder,
 - To install dependencies, run npm install or yarn
 - To run the application for development, run npm run development or yarn development
-- Open [(localhost:8080)] in the browser.
-- CLIENT_URL= [(localhost:3000)].
+- Open [localhost:8080](http://localhost:8080/) in the browser.
+- CLIENT_URL= [localhost:3000](http://localhost:3000/)
