@@ -63,7 +63,9 @@ class NewPost extends Component {
         }
     };
 
-        newPostForm = (title, body) => (    
+        newPostForm = (title, body) => (
+        <div className="card">
+        <div className="card-body">
             <form>
                 <div className = "form-group">
                     <label className="text-muted">Post Photo</label>
@@ -95,6 +97,8 @@ class NewPost extends Component {
                 <br />
                 <button onClick={this.clickSubmit} className="btn btn-raised btn-primary mx-2 ">Create Post</button>
             </form>
+        </div>
+        </div>
         );
     
     render() {
@@ -109,7 +113,7 @@ class NewPost extends Component {
         } = this.state;
 
         if (redirectToProfile) {
-           return <Redirect to={`/user/${user._id}`} />;
+            return <Redirect to={`/user/${user._id}`} />;
         }
 
         return (
@@ -126,7 +130,7 @@ class NewPost extends Component {
                         <h2>Loading...</h2>
                     </div>
                 ) : (
-                     ""
+                    ""
                 )}
 
                 {this.newPostForm(title, body)}

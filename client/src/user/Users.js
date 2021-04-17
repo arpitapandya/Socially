@@ -30,10 +30,8 @@ class Users extends Component {
                             border: 'black',
                             opacity: '0.8',
                             margin: 'auto',
-                            height: '25vw',
-                            width: '86%',
-                            // height: '15vw',
-                            // width: '100%',
+                            height: '15vw',
+                            width: '100%',
                             objectFit: 'cover' 
                             }}
                         className="img-thumbnail"
