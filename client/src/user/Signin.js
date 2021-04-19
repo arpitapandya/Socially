@@ -41,8 +41,8 @@ class Signin extends Component {
     };
 
     signinForm = (email, password) => (
-        <div className="card">
-        <div className="card-body">
+        // <div className="card">
+        // <div className="card-body">
         <form>
         <div className = "form-group">
             <label className="text-muted">Email</label>
@@ -65,8 +65,8 @@ class Signin extends Component {
         <br />
         <button onClick={this.clickSubmit} className="btn btn-raised btn-primary">Submit</button>
     </form>
-    </div>
-    </div>
+    // </div>
+    // </div>
     );
 
     render() {

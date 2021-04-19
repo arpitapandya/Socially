@@ -1,15 +1,15 @@
 import React from "react";
 import "./Home.css";
-// import Posts from "../post/Posts";
+import Posts from "../post/Posts";
 
 const Home = () => (
     <div>
         <div className="jumbotron">
-            {/* <h2>Welcome</h2> */}
+            {/* <h2>Welcome our website</h2> */}
             <p className="lead"></p>
         </div>
         <div className="container">
-            {/* <Posts /> */}
+            <Posts />
         </div>
     </div>
 );

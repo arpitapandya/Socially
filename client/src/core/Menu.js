@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import { signout, isAuthenticated } from "../auth";
+import "./Menu.css";
 
 const isActive = (history, path) => {
     if (history.location.pathname === path) return {color: "#ff9900"};
@@ -9,7 +10,7 @@ const isActive = (history, path) => {
 
 const Menu = ({ history }) => (
     <div>
-    <ul className="nav nav-tabs bg-dark">
+    <ul className="nav nav-tabs">
         <li className="nav-item">
             <Link className="nav-link" style={isActive(history, "/")} to="/">Home</Link>
         </li>
@@ -26,7 +27,7 @@ const Menu = ({ history }) => (
                 Create Post
             </Link>
         </li>
-        
+
     {!isAuthenticated() && (
     <>
         <li className="nav-item">

@@ -1,0 +1,12 @@
+.nav-tabs {
+    background-color: teal;
+    border-style: unset;
+    border-bottom: 1px solid black;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    /* border: 1px solid transparent; */
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}

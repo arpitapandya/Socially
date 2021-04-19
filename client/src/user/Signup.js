@@ -43,8 +43,8 @@ class Signup extends Component {
     };
 
     signupForm = (name, email, password) => (    
-    <div className="card">
-    <div className="card-body">
+    // <div className="card">
+    // <div className="card-body">
     <form>
         <div className = "form-group">
             <label className="text-muted">Name</label>
@@ -76,8 +76,8 @@ class Signup extends Component {
         <br />
         <button onClick={this.clickSubmit} className="btn btn-raised btn-primary">Submit</button>
     </form>
-    </div>
-    </div>
+    // </div>
+    // </div>
     );
 
     render() {
